@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".\style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+   
+</head>
+<body>
+    <!--<input type="range" name="" id="" min="1" max="20">-->
+<div class="container">
+    <div class="Box">
+     <!--Heading Section-->
+     <section class="heading">
+        <i class="ri-lock-2-fill"></i>
+        <span>Password Generator</span>
+     </section>
+     <!--Input Box Section-->
+     <section>
+        <input type="text">
+     </section>
+     <!--Password Length Section-->
+     <section class="passwordlength">
+        <p id="text">Password Length <span id="spantext">11</span> </p>
+        <input type="range" name="" id="passwordlengthmeter" class="input" min="1" max="20">
+     </section>
+     <!--checkBox Sections-->
+
+        <div class="div uppercasesection">
+            <p>Include uppercase</p>
+            <input type="checkbox" name="" id="uppercase" >
+        </div>
+        <div class="div numbers">
+            <p>Include numbers</p>
+            <input type="checkbox" name="" id="numbers">
+        </div>
+        <div class="div symbols">
+            <p>Include symbols</p>
+            <input type="checkbox" name="" id="symbols">
+        </div>
+<button onclick="generatepassword()">Generate Password</button>
+    </div>
+</div>
+
+
+<script src=".\script.js"></script>
+</body>
+</html>
